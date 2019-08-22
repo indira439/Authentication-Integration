@@ -1,0 +1,17 @@
+<h2 style="text-align: center">Login with JWT</h2>
+
+<div style="text-align: center">
+  <input [(ngModel)]="userName" class="form-control" type="text">
+  <br>
+  <br>
+  <input [(ngModel)]="password" class="form-control" id="password" type="password">
+  <br>
+  <br>
+  <button (click)="saveUser()" class="btn btn-success" routerLinkActive="router-link-active" type="button">Save</button>
+  <button (click)="login()" class="btn btn-success" routerLinkActive="router-link-active" type="button">Login</button>
+  <br>
+  <br>
+  <button mat-raised-button (click)="signInWithGoogle()" color="primary">Login with Google</button>
+</div>
+
+<router-outlet></router-outlet>
